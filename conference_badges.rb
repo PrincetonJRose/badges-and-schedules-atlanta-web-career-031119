@@ -19,3 +19,14 @@ def assign_rooms(speakers)
   end
   return room_assignments
 end
+
+def printer
+  badges = batch_badge_creator
+  rooms = assign_rooms
+  for phrase in badges
+    puts phrase
+  end
+  for room in rooms
+    puts room
+  end
+end
