@@ -11,3 +11,10 @@ end
 def badge_maker(name)
   return "Hello, my name is #{name}."
 end
+
+def assign_rooms(speakers)
+  room_assignments = []
+  for count in 1..speakers.size
+    room_assignments.push("Hello, #{speakers[count-1]}! You'll be assigned to room #{count}!")
+  end
+end
