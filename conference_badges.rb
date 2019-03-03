@@ -17,4 +17,5 @@ def assign_rooms(speakers)
   for count in 1..speakers.size
     room_assignments.push("Hello, #{speakers[count-1]}! You'll be assigned to room #{count}!")
   end
+  return room_assignments
 end
